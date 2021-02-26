@@ -1,4 +1,4 @@
-﻿@model SalesWebMvc.Models.Seller 
+﻿@model SalesWebMvc.Models.Seller
 
 @{
     ViewData["Title"] = "Delete";
@@ -39,8 +39,18 @@
     </dl>
 
     <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" />
-        <a asp-action="Index">Back to List</a>
-    </form>
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-danger" />
+            <a asp-action="Index">Back to List</a>
+        </form>
+
+    @*<div>
+        <a asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-danger" />
+        </a>
+        <a asp-action="Index">
+            <input type="button" value="Cancel" class="btn btn-default" />
+        </a>
+    </div>*@
 </div>
